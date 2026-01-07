@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktiviteler & Mekanlar - PortCity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1a5276;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Services Hero */
+        .services-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .services-hero h1 {
+            font-size: 42px;
+        }
+
+        /* Activities Section */
+        .activities {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #1a5276;
+            margin-bottom: 15px;
+        }
+
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .activity-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .activity-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .activity-content {
+            padding: 25px;
+        }
+
+        .activity-content h3 {
+            color: #1a5276;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        /* Places Section */
+        .places {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .place-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .place-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .place-content {
+            padding: 25px;
+        }
+
+        .place-content h3 {
+            color: #1a5276;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .place-content p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .hours {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 10px;
+            }
+            
+            .services-hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">PortCity Marina</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkında</a></li>
+                        <li><a href="services.html">Aktiviteler & Mekanlar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+        <div class="container">
+            <h1>Aktiviteler & Mekanlar</h1>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="activities">
+        <div class="container">
+            <div class="section-title">
+                <h2>Aktiviteler</h2>
+                <p>PortCity'de keyifli vakit geçirmeniz için birçok aktivite</p>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="activity-content">
+                        <h3>Yelken & Yat Turları</h3>
+                        <p>Günlük yelken turları ve özel yat kiralama imkanları</p>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="activity-content">
+                        <h3>Su Sporları</h3>
+                        <p>Jet ski, sörf, paddle board ve dalış aktiviteleri</p>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="activity-content">
+                        <h3>Balık Tutma</h3>
+                        <p>Rehberli balık tutma turları ve ekipman kiralama</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Places Section -->
+    <section class="places">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mekanlar</h2>
+                <p>PortCity'deki keyifli mekanlar</p>
+            </div>
+            <div class="places-grid">
+                <div class="place-card">
+                    <div class="place-img" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="place-content">
+                        <h3>Mavi Restoran</h3>
+                        <p>Deniz ürünleri ve Akdeniz mutfağının en güzel örnekleri</p>
+                        <p class="hours">Açılış: 08:00 - 23:00</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <div class="place-img" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="place-content">
+                        <h3>Liman Kafe</h3>
+                        <p>Manzaralı kafe ve canlı müzik performansları</p>
+                        <p class="hours">Açılış: 07:00 - 01:00</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <div class="place-img" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="place-content">
+                        <h3>Marina Bar</h3>
+                        <p>Gün batımı kokteylleri ve özel içkiler</p>
+                        <p class="hours">Açılış: 16:00 - 02:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 PortCity Marina. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>

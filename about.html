@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortCity Hakkında</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1a5276;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* About Hero */
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 42px;
+        }
+
+        /* About Content */
+        .about-content {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .about-text {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-text h2 {
+            font-size: 32px;
+            color: #1a5276;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Features */
+        .features {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #1a5276;
+            margin-bottom: 15px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h3 {
+            margin: 15px 0;
+            color: #1a5276;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 10px;
+            }
+            
+            .about-hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">PortCity Marina</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkında</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>PortCity Hakkında</h1>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-text">
+                <h2>Biz Kimiz?</h2>
+                <p>PortCity, 2023 yılında mersin  belediyesi tarafından hayata geçirilen, modern altyapısı ve eşsiz konumuyla Akdeniz'in en gözde turistik marina bölgelerinden biridir.</p>
+                
+                <p>250'den fazla yat kapasitesi, lüks tesisleri ve çeşitli aktivite olanaklarıyla ziyaretçilerine unutulmaz bir deneyim sunmaktadır. Marinamız, hem yerel halka hem de turistlere hizmet vererek şehrin turizm potansiyelini artırmayı hedeflemektedir.</p>
+                
+                <p>Deniz tutkunları için tasarlanan PortCity, sadece bir marina değil, aynı zamanda bir yaşam tarzıdır. Modern olanakları ile konforu, doğal güzellikleri ile huzuru bir araya getiriyoruz.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Öne Çıkan Özellikler</h2>
+                <p>PortCity'yi özel kılan detaylar</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>500+ Yat Kapasitesi</h3>
+                    <p>Geniş ve modern yat bağlama alanları</p>
+                </div>
+                <div class="feature-card">
+                    <h3>7/24 Güvenlik</h3>
+                    <p>Kesintisiz güvenlik ve kamera sistemi</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Modern Tesisler</h3>
+                    <p>Lüks restoranlar ve sosyal alanlar</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Doğa Dostu</h3>
+                    <p>Çevreye duyarlı marina tasarımı</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 PortCity Marina. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>
